@@ -2,10 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractCssIntoFile = require("mini-css-extract-plugin");
 
-let env = process.env;
-
-console.log(env);
-
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
@@ -17,7 +13,7 @@ module.exports = {
     devServer: {
         port: 3000,
         hot: true,
-        // open: true,
+        open: true,
         client: {
             logging: "error",
             progress: true,
